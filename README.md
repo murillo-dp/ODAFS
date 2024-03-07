@@ -3,7 +3,7 @@
 ## Bachelor's Degree in Computer Engineering Final Project
 
 ### Overview
-This repository contains the comprehensive work for my Bachelor's Degree in Computer Engineering Final Project. The project focuses on the development of a decentralized organization for the management of healthcare funds. The system is designed to streamline and enhance the process of allocating funds for medical treatments through the utilization of blockchain technology.
+This repository contains the comprehensive work for my Bachelor's Degree in Computer Engineering Final Project. The project focuses on the development of a decentralized organization (DAO) for the management of healthcare funds. The system is designed to streamline and enhance the process of allocating funds for medical treatments through the utilization of blockchain technology.
 
 ### Project Components
 
