@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODAFS - The Future of Healthcare</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">ODAFS</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="pharmacy.html">Pharmacies</a></li>
+                <li><a href="hospital.html">Hospitals</a></li>
+                <li><a href="charity.html">Vault</a></li>
+                <li><a href="DAO.html">DAO</a></li>
+                <li><button class="blue-button" id="connectWalletButton">Connect</button></li>
+            </ul>
+        </div>
+        <img src="img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <header>
+        <div class="center-d">
+            <div class="left">
+                <h1>Products</h1>
+                <p>Product Selector: <span id="numProd"></span></p>
+                <div class="wrapper">
+                    <span class="minus">-</span>
+                    <span class="num">0</span>
+                    <span class="plus">+</span>
+                </div>
+                <button id="productButton">See product</button>
+                <div id="resultP"></div>
+                <textarea id="cant" rows='1' placeholder="Amount"></textarea>
+                <button id="buyButton">Pay Treatment</button>
+                <button id="donateButton">Donation Treatment</button>
+            </div>
+            <div class="right">
+                <h1>Add inventory</h1>
+                <div class="test">
+                    <p>Name:</p>
+                    <textarea id="name" rows="1" placeholder="Name"></textarea>
+                    <p>Description:</p>
+                    <textarea id="description1" rows="3" placeholder="Enter product's description"></textarea>
+                    <p>Price:</p>
+                    <textarea id="price" rows="1" placeholder="ETH/unit"></textarea>
+                    <button id="addProduct">Add product info</button>
+                    <p>Product's Id:</p>
+                    <textarea id="idt" rows="1" placeholder="Product"></textarea>
+                    <p>Amount:</p>
+                    <textarea id="amount" rows="1" placeholder="Units"></textarea>
+                    <button id="addStock">Add Stock</button>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+<script src="scripts/interactionPharmacy.js" type="module"></script>
+</html>

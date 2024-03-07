@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODAFS - The Future of Healthcare</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">ODAFS</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pharmacy.html">Pharmacies</a></li>
+                <li class="active"><a href="hospital.html">Hospitals</a></li>
+                <li><a href="charity.html">Vault</a></li>
+                <li><a href="DAO.html">DAO</a></li>
+                <li><button class="blue-button" id="connectWalletButton">Connect</button></li>
+            </ul>
+        </div>
+        <img src="img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <header>
+        <div class="center">
+            <div id="image"></div>
+            <div id="docInfo"></div>
+            <div class="wrapper2">
+                <span class="back">&lt;</span>
+                <span class="next">&gt;</span>
+            </div>
+            <hr>
+            <p>Address:</p>
+            <textarea id="address" rows="1"></textarea>
+            <p>License Number:</p>
+            <textarea id="numLicencia" rows="1"></textarea>
+            <p>Name:</p>
+            <textarea id="name" rows="1"></textarea>
+            <p>Surname:</p>
+            <textarea id="apellidos" rows="1"></textarea>
+            <p>Photo:</p>
+            <textarea id="photo" rows="1"></textarea>
+            <button id="addDoctor">Add Doctor</button>
+        </div>
+    </header>
+</body>
+<script src="scripts/interactionDoctors.js" type="module"></script>
+</html>

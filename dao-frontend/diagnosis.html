@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODAFS - The Future of Healthcare</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">ODAFS</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pharmacy.html">Pharmacies</a></li>
+                <li class="active"><a href="hospital.html">Hospitals</a></li>
+                <li><a href="charity.html">Vault</a></li>
+                <li><a href="DAO.html">DAO</a></li>
+                <li><button class="blue-button" id="connectWalletButton">Connect</button></li>
+            </ul>
+        </div>
+        <img src="img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <header>
+        <div class="center">
+            <h3>Appointment ID:</h3>
+            <textarea id="id" class="form" rows="1" placeholder="ID"></textarea>
+            <div id="patient"></div>
+            <p>Diagnosis:</p>
+            <textarea id="diagnosis" class="form" rows="3" placeholder="Description"></textarea>
+            <p>Price:</p>
+            <textarea id="price" class="form" rows="1" placeholder="ETH"></textarea>
+            <button id="send">Send</button>
+            <a href="doctors.html">Doctor Management</a>
+        </div>
+    </header>
+</body>
+<script src="scripts/interactionDiagnosis.js" type="module"></script>
+</html>
