@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/mesaDoctor.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navbar .blue-button {
+    background-color: #33D1FF;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    }    
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #33D1FF;
+}
+
+.nav-links ul {
+    display: flex;
+}
+
+.nav-links ul li {
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.menu-hamburger {
+    display: none;
+    width: 30px; 
+    height: 30px;
+    cursor: pointer;
+}
+
+.navbar .nav-links ul li a{
+    color: #33D1FF;
+}
+
+.navbar .nav-links ul li.active a{
+    color: #175c71;
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.intro h1 {
+    font-size: 3em;
+    color: #33D1FF;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.subscription label {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #555;
+}
+
+.subscription input {
+    padding: 8px;
+    width: 40px;
+    text-align: center;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.subscription span {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.subscription button {
+    padding: 10px 20px;
+    background-color: #33D1FF;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription button:hover {
+    background-color: #1E90FF;
+}
+
+/*Donation Charts*/
+.pie-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+    
+.chart-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+    
+#description {
+    width: 310px;
+    height: 50px;
+}
+
+#receiver {
+    width: 310px;
+}
+
+#amount {
+    width: 310px;
+}
+
+/*DAO*/
+.center-d {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.left {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.left textarea {
+    margin-top: 10px;
+    width: 90px;
+}
+    
+.right {
+    flex-basis: 50%;
+}
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.wrapper{
+    height: 50px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+}
+    
+.wrapper span.num {
+    font-size: 25px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+.wrapper2{
+    height: 25px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.wrapper2 span{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.test textarea {
+    width: 78%;
+    box-sizing: border-box;
+}
+
+.test button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #9a1515; 
+    margin: 20px 0;  
+}
+
+#waiting {
+    display: none;
+}
+
+#solicitar {
+    display: none;
+}
+
+#diagnosed {
+    display: none;
+}
+
+#doctButton {
+    padding: 8px 17px;
+    border-radius: 5px;
+    background-color: rgb(76, 203, 232);
+    color: white;
+}
+
+#patiButton{
+    margin-top: 10px;
+    padding: 8px 17px;
+    border-radius: 5px;
+    background-color: rgb(76, 203, 232);
+    color: white;
+}
+
+#requestButton{
+    margin-top: 10px;
+    padding: 8px 17px;
+    border-radius: 5px;
+    background-color: rgb(76, 203, 232);
+    color: white;
+}
+
+#send{
+    margin-top: 10px;
+    padding: 8px 17px;
+    border-radius: 5px;
+    background-color: rgb(76, 203, 232);
+    color: white;
+}
+
+.form{
+    width: 300px;
+}
+
